@@ -38,7 +38,7 @@ export default function Edit({updateNote, note, deleteNoteElement}) {
     
     
     //const { noteId } = useParams();
-    const[x, setValue] = useState("");
+    const[x, setValue] = useState(note[noteId-1].body_html);
     const[body, setBody] = useState( x.replace(/<\/?[^>]+(>|$)/g, ""))
     const[y, setY] = useState(note[noteId-1].title);
     const[title, setTitle] = useState(y);
