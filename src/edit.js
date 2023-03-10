@@ -12,7 +12,6 @@ export default function Edit({updateNote, note, deleteNoteElement}) {
 
 
     const { noteId } = useParams();
-    console.log(noteId-1)
     const navigate = useNavigate();
 
 
@@ -24,7 +23,6 @@ export default function Edit({updateNote, note, deleteNoteElement}) {
         minute: "numeric",
         
     };
-    console.log(options)
     const formatDate = (when)  => {
 
          const formatted = new Date(when).toLocaleString("en-US", options);
@@ -77,9 +75,8 @@ export default function Edit({updateNote, note, deleteNoteElement}) {
     }
 
     useEffect(()=> {
-        console.log("edit log:", note, x)
         setValue(note[noteId-1].body_html)
-    }, [note,x, noteId])
+    }, [note,noteId])
 
   
 

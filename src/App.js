@@ -57,9 +57,6 @@ function App() {
 
   const deleteNoteElement = (key) => {
     const newList = note.filter((N) =>  N.num !== note_num - key )
-    console.log(note_num - key)
-    console.log(key)
-    console.log(newList)
     for(let i = 0, j = note_num-2; i < note_num-2; i++, j--){
       newList[i].num = j
     }
@@ -74,7 +71,6 @@ function App() {
 
   
   const updateNote = (body,title,formatDate,number_id,x,z) =>{
-    console.log(x)
     note[number_id].body = body
     note[number_id].title = title===''? 'Untitled':title
     note[number_id].DayTime = formatDate

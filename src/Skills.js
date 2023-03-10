@@ -12,7 +12,6 @@ function Skills({note, deleteNoteElement}) {
   const navigate = useNavigate();
 
   const { noteId } = useParams();
-  console.log(noteId)
 
 
 
