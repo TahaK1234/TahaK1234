@@ -80,10 +80,14 @@ export default function Edit({updateNote, note, deleteNoteElement}) {
 
     useEffect(()=> {
         setY(note[noteId-1].title)
+        setTitle(note[noteId-1].title)
+
     }, [note,noteId])
 
     useEffect(()=> {
         setZ(note[noteId-1].DayTimeUnformated)
+        setdateTime(note[noteId-1].DayTimeUnformated)
+
     }, [note,noteId])
 
   
