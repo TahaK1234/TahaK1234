@@ -86,7 +86,7 @@ export default function Edit({updateNote, note, deleteNoteElement}) {
 
     useEffect(()=> {
         setZ(note[noteId-1].DayTimeUnformated)
-        setdateTime(note[noteId-1].DayTimeUnformated)
+        setdateTime(note[noteId-1].DayTime)
 
     }, [note,noteId])
 
