@@ -1,3 +1,10 @@
 Drop your Netlify application address here.
 
-https://640a98ceec85f800074a3fe2--startling-empanada-6a0a91.netlify.app
+
+Permalink:
+https://640aa0e5bb3ba60008ac057b--startling-empanada-6a0a91.netlify.app/
+
+
+production deploy link:
+https://main--startling-empanada-6a0a91.netlify.app
+
