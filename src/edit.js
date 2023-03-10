@@ -9,10 +9,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Edit({updateNote, note, deleteNoteElement}) {
 
-    useEffect(()=> {
-        console.log("edit log:", note, x)
-        setValue(note[noteId-1].body_html)
-    }, [note])
+
 
     const { noteId } = useParams();
     console.log(noteId-1)
@@ -78,6 +75,11 @@ export default function Edit({updateNote, note, deleteNoteElement}) {
 
 
     }
+
+    useEffect(()=> {
+        console.log("edit log:", note, x)
+        setValue(note[noteId-1].body_html)
+    }, [note])
 
   
 
