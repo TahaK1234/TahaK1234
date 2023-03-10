@@ -78,6 +78,14 @@ export default function Edit({updateNote, note, deleteNoteElement}) {
         setValue(note[noteId-1].body_html)
     }, [note,noteId])
 
+    useEffect(()=> {
+        setY(note[noteId-1].title)
+    }, [note,noteId])
+
+    useEffect(()=> {
+        setZ(note[noteId-1].DayTimeUnformated)
+    }, [note,noteId])
+
   
 
     return(
