@@ -79,7 +79,7 @@ export default function Edit({updateNote, note, deleteNoteElement}) {
     useEffect(()=> {
         console.log("edit log:", note, x)
         setValue(note[noteId-1].body_html)
-    }, [note,x])
+    }, [note,x, noteId])
 
   
 
